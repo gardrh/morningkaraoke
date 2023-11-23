@@ -116,11 +116,10 @@ footer {
             margin-bottom: 30px;
         }
 
-        .founder img {
-            max-width: 100%;
+       .founder img {
+            max-width: 50%; /* Set the image size to 50% of its original size */
             height: auto;
             border-radius: 50%;
             margin-bottom: 10px;
         }
-
      
