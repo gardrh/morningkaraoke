@@ -4,11 +4,11 @@ body {
     padding: 0;
     box-sizing: border-box;
     background-color: #FFD700; /* Yellow background */
+    color: #333; /* Dark text for better contrast */
 }
 
 header {
-    background-color: #333;
-    color: white;
+    background-color: #1a1e26; /* Darker header background */
     padding: 1em;
     text-align: center;
 }
@@ -30,12 +30,19 @@ li {
 
 a {
     text-decoration: none;
-    color: white;
+    color: #fff; /* White link text */
+    transition: color 0.3s ease; /* Smooth color transition on hover */
+}
+
+a:hover {
+    color: #333; /* Dark text on hover for better visibility */
 }
 
 img {
-    max-width: 100%; /* Make the image responsive */
-    height: auto; /* Maintain the aspect ratio */
+    max-width: 100%;
+    height: auto;
+    display: block; /* Center the image */
+    margin: 0 auto;
 }
 
 .hero {
@@ -44,12 +51,13 @@ img {
 }
 
 h1, h2 {
-    font-family: 'Papyrus', sans-serif; /* Papyrus font for h1 and h2 */
+    font-family: 'Papyrus', sans-serif;
+    color: #1a1e26; /* Darker title text for contrast */
 }
 
 footer {
-    background-color: #333;
-    color: white;
+    background-color: #1a1e26;
+    color: #fff;
     text-align: center;
     padding: 1em;
     position: fixed;
