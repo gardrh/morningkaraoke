@@ -54,7 +54,7 @@ img {
     margin: 0 auto; /* Center the content horizontally */
 }
 
-h1, h2 {
+h1, h2, h3 {
     font-family: 'Papyrus', sans-serif;
     color: #1a1e26; /* Darker title text for contrast */
 }
@@ -66,6 +66,10 @@ h1 {
 h2 {
     font-size: 2em; /* Larger font size for h2 */
 }
+h3 {
+    font-size: 1.7em; /* Larger font size for h3 */
+}
+
 
 footer {
     background-color: #1a1e26;
