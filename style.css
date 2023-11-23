@@ -77,3 +77,29 @@ footer {
     width: 100%;
     font-size: 1.2em; /* Larger font size for footer text */
 }
+
+
+        /* Additional styles for the FAQ section */
+        .faq-section {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .question {
+            cursor: pointer;
+            padding: 10px;
+            margin: 5px 0;
+            background-color: #1a1e26;
+            color: #fff;
+            border: none;
+            text-align: left;
+            width: 100%;
+        }
+
+        .answer {
+            display: none;
+            padding: 10px;
+            background-color: #333;
+            color: #fff;
+        }
