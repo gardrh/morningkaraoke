@@ -1,19 +1,16 @@
+Certainly! Based on the provided HTML structure, I've added the FAQ section to your `about.html` file. I've also made sure to include the same styles and scripts in the head of the document. Here's the modified `about.html`:
+
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <head>
-    <!-- Other head elements -->
-    <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Papyrus&display=swap" rel="stylesheet">
-    <title>Morning Karaoke</title>
-        <link rel="icon" href="favicon.png" type="image/png">
+    <title>About Morning Karaoke</title>
+    <link rel="icon" href="faviconmk.png" type="image/png">
 
-</head>
-
-    <title>Morning Karaoke</title>
 </head>
 <body>
     <header>
@@ -28,11 +25,47 @@
         </nav>
     </header>
     <section class="content">
-        <h2>About Us</h2>
-        <p>This is the About page. Add your content here.</p>
+        <h1>About Us</h1>
+        <p>Morning karaoke</p>
+        
+        <!-- FAQ Section -->
+        <div class="faq-section">
+            <div class="question" onclick="toggleAnswer('faq1')">What is Morning Karaoke all about?</div>
+            <div class="answer" id="faq1">It is about singing karaoke with good friends in the morning</div>
+
+            <div class="question" onclick="toggleAnswer('faq2')">How can I join Morning Karaoke sessions?</div>
+            <div class="answer" id="faq2">Meet up at a local morning karaoke event. See our partners section for more information</div>
+
+               <div class="question" onclick="toggleAnswer('faq1')">What songs can I sing?</div>
+            <div class="answer" id="faq1">Check out <a href="https://www.singpin.app/" target="_blank">SingPin</a> for inspiration</div>
+
+               <div class="question" onclick="toggleAnswer('faq1')">What is Morning Karaoke all about?</div>
+            <div class="answer" id="faq1">It is about singing karaoke with good friends in the morning</div>
+
+               <div class="question" onclick="toggleAnswer('faq1')">What is Morning Karaoke all about?</div>
+            <div class="answer" id="faq1">It is about singing karaoke with good friends in the morning</div>
+
+               <div class="question" onclick="toggleAnswer('faq1')">What is Morning Karaoke all about?</div>
+            <div class="answer" id="faq1">It is about singing karaoke with good friends in the morning</div>
+            <!-- Add more FAQ entries as needed -->
+        </div>
     </section>
     <footer>
         <p>&copy; 2023 Morning Karaoke. All rights reserved.</p>
     </footer>
+
+    <script>
+        function toggleAnswer(id) {
+            var answer = document.getElementById(id);
+            if (answer.style.display === 'block') {
+                answer.style.display = 'none';
+            } else {
+                answer.style.display = 'block';
+            }
+        }
+    </script>
 </body>
 </html>
+```
+
+This code integrates the FAQ section into your `about.html` page while maintaining the overall structure and styles.
