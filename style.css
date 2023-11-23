@@ -1,9 +1,12 @@
+Certainly! Here's the updated `style.css` file for the modern and futuristic look, keeping the same typography across all pages:
+
+```css
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: ##FFD700; /* Yellow background */
+    background-color: #FFD700; /* Yellow background */
     color: #333; /* Dark text for better contrast */
 }
 
@@ -45,7 +48,7 @@ img {
     margin: 0 auto;
 }
 
-.hero {
+.content {
     text-align: center;
     padding: 2em;
 }
@@ -64,3 +67,6 @@ footer {
     bottom: 0;
     width: 100%;
 }
+```
+
+Copy and paste this CSS code into your `style.css` file, and it should maintain a consistent look across all pages while providing a modern and futuristic aesthetic.
