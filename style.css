@@ -33,6 +33,11 @@ a {
     color: white;
 }
 
+img {
+    max-width: 100%; /* Make the image responsive */
+    height: auto; /* Maintain the aspect ratio */
+}
+
 .hero {
     text-align: center;
     padding: 2em;
