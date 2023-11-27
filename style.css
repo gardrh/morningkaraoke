@@ -15,18 +15,6 @@ header {
     position: relative;
 }
 
-.logo {
-    max-width: 100%;
-    height: auto;
-}
-
-.logo-mobile {
-    display: none;
-    max-width: 60%;
-    height: auto;
-    margin: 1em 0;
-}
-
 .menu-icon {
     display: none;
     cursor: pointer;
@@ -41,8 +29,8 @@ header {
 }
 
 .hamburger {
-    width: 40px;
-    height: 4px;
+    width: 30px;
+    height: 3px;
     background-color: #fff;
     margin: 6px 0;
 }
@@ -121,22 +109,40 @@ footer {
     font-size: 1.2em;
 }
 
+/* Founders Section */
+.founders-section {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.founder {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.founder img {
+    max-width: 50%;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
 /* Mobile styles */
 @media only screen and (max-width: 768px) {
     header {
         position: relative;
     }
 
-    .logo {
-        display: none;
-    }
-
-    .logo-mobile {
-        display: block;
-    }
-
     .menu-icon {
         display: block;
+    }
+
+    .hamburger {
+        width: 30px;
+        height: 3px;
+        background-color: #fff;
+        margin: 6px 0;
     }
 
     nav {
@@ -161,24 +167,12 @@ footer {
     nav li {
         margin: 10px 0;
     }
-}
 
+    img {
+        max-width: 80%;
+    }
 
-/* Founders Section */
-.founders-section {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-}
-
-.founder {
-    text-align: center;
-    margin-bottom: 30px;
-}
-
-.founder img {
-    max-width: 50%;
-    height: auto;
-    border-radius: 50%;
-    margin-bottom: 10px;
+    .founder img {
+        max-width: 100%;
+    }
 }
