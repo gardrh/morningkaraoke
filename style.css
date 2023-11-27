@@ -41,7 +41,6 @@ header {
     color: #fff;
     font-size: 0.4em;
     margin-top: 4.2px;
-
 }
 
 nav {
@@ -64,12 +63,14 @@ nav.show {
 ul {
     list-style-type: none;
     padding: 0;
+    /* Adjust to vertical layout */
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 li {
-    margin: 0 1em;
+    margin: 10px 0;
 }
 
 a {
