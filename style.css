@@ -15,6 +15,18 @@ header {
     position: relative;
 }
 
+.logo {
+    max-width: 100%;
+    height: auto;
+}
+
+.logo-mobile {
+    display: none;
+    max-width: 60%;
+    height: auto;
+    margin: 1em 0;
+}
+
 .menu-icon {
     display: none;
     cursor: pointer;
@@ -111,8 +123,16 @@ footer {
 
 /* Mobile styles */
 @media only screen and (max-width: 768px) {
-    header img {
-        max-width: 70%;
+    header {
+        position: relative;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .logo-mobile {
+        display: block;
     }
 
     .menu-icon {
