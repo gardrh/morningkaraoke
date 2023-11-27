@@ -41,6 +41,8 @@ header {
     color: #fff;
     font-size: 0.4em;
     margin-top: 4.2px;
+    writing-mode: vertical-rl;
+
 }
 
 nav {
