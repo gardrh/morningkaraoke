@@ -1,21 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
-    <link rel="icon" href="faviconmk.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Papyrus&display=swap" rel="stylesheet">
+     <script src="script.js" defer></script>
+     <link rel="icon" href="faviconmk.png" type="image/png">
     <title>Morning Karaoke</title>
-</head>
 
+</head>
 <body>
     <header>
         <img src="MK logo just text.svg" alt="Morning Karaoke Logo">
         <div class="menu-icon" onclick="toggleMenu()">
-            <div class="hamburger"></div>
-            <div class="hamburger"></div>
             <div class="hamburger"></div>
             <div class="menu-text">Menu</div>
         </div>
@@ -33,12 +31,15 @@
         <p>Just like evening karaoke, but in the morning!</p>
         <img src="mklogonotext.png" alt="Morning Karaoke Logo">
     </section>
-    <section class="founders-section">
-        <!-- Content for the Founders Section goes here -->
-    </section>
     <footer>
         <p>&copy; 2023 Morning Karaoke. All rights reserved.</p>
     </footer>
-</body>
 
+    <script>
+        function toggleMenu() {
+            var nav = document.querySelector('nav ul');
+            nav.classList.toggle('show');
+        }
+    </script>
+</body>
 </html>
