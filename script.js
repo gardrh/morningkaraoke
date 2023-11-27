@@ -1,4 +1,7 @@
-This is my current script file, should i change it function toggleMenu() {
-    var nav = document.querySelector('nav ul');
-    nav.classList.toggle('show');
-}
+    function toggleMenu() {
+        // Get the navigation element
+        var nav = document.querySelector('nav');
+
+        // Toggle the 'show' class on the navigation menu
+        nav.classList.toggle('show');
+    }
