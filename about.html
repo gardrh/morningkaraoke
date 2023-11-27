@@ -5,22 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Papyrus&display=swap" rel="stylesheet">
+     <script src="script.js" defer></script>
+     <link rel="icon" href="faviconmk.png" type="image/png">
     <title>About Morning Karaoke</title>
-    <link rel="icon" href="faviconmk.png" type="image/png">
-    <script>
-        function toggleAnswer(faqId) {
-            var answer = document.getElementById(faqId);
-            if (answer.style.display === 'block') {
-                answer.style.display = 'none';
-            } else {
-                answer.style.display = 'block';
-            }
-        }
-    </script>
+   
 </head>
 <body>
-    <header>
+<header>
         <img src="MK logo just text.svg" alt="Morning Karaoke Logo">
+        <div class="menu-icon" onclick="toggleMenu()">
+            <div class="hamburger"></div>
+            <div class="menu-text">Menu</div>
+        </div>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
