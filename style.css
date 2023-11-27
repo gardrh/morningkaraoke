@@ -176,3 +176,26 @@ footer {
     border-radius: 50%;
     margin-bottom: 10px;
 }
+
+/* style.css */
+
+/* Existing styles */
+
+.faq-section {
+  margin-top: 30px;
+}
+
+.question {
+  cursor: pointer;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.answer {
+  display: none;
+  margin-bottom: 20px;
+}
+
+.answer.show {
+  display: block;
+}
