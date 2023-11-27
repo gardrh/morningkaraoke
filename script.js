@@ -1,10 +1,4 @@
-function toggleMenu() {
-    console.log('Toggle menu function called');
+This is my current script file, should i change it function toggleMenu() {
     var nav = document.querySelector('nav ul');
     nav.classList.toggle('show');
 }
-
-document.querySelector('.menu-icon').addEventListener('click', function() {
-    var nav = document.querySelector('nav ul');
-    nav.classList.toggle('show');
-});
