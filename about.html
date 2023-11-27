@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,7 +7,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Papyrus&display=swap" rel="stylesheet">
     <title>About Morning Karaoke</title>
     <link rel="icon" href="faviconmk.png" type="image/png">
-
+    <script>
+        function toggleAnswer(faqId) {
+            var answer = document.getElementById(faqId);
+            if (answer.style.display === 'block') {
+                answer.style.display = 'none';
+            } else {
+                answer.style.display = 'block';
+            }
+        }
+    </script>
 </head>
 <body>
     <header>
@@ -24,35 +32,35 @@
     </header>
     <section class="content">
         <h1>About Us</h1>
-        
+
         <!-- Founders Section -->
         <div class="founders-section">
+            <!-- Founder 1 -->
             <div class="founder">
                 <img src="founder1.jpeg" alt="Founder 1">
                 <h2>Gunvor Bottheim</h2>
                 <p>Co-Founder Boss of Communications Performance and Strategic Partnerships</p>
-                <p>Gunvor Bottheim is a seasoned professional in the field of communications and strategic partnerships. With a passion for connecting people and ideas, Gunvor plays a crucial role in ensuring effective communication and fostering valuable partnerships for Morning Karaoke. Her dedication to performance excellence is a driving force behind the success of our communication strategies and collaborations with strategic partners.
-</p>
+                <p>Gunvor Bottheim is a seasoned professional in the field of communications and strategic partnerships. With a passion for connecting people and ideas, Gunvor plays a crucial role in ensuring effective communication and fostering valuable partnerships for Morning Karaoke. Her dedication to performance excellence is a driving force behind the success of our communication strategies and collaborations with strategic partners.</p>
             </div>
 
+            <!-- Founder 2 -->
             <div class="founder">
-                <img src="founder1.jpeg" alt="Founder 2">
+                <img src="founder2.jpeg" alt="Founder 2">
                 <h2>Gorm Tungland</h2>
                 <p>Co-Founder Boss of Stage Performance and Atmosphere</p>
-                <p>Gorm Tungland is a Co-Founder at Morning Karaoke, serving as the Boss of Stage Performance and Atmosphere. With a keen eye for creating memorable experiences, Gorm is dedicated to curating exceptional stage performances and fostering an engaging atmosphere for Morning Karaoke events. His passion for creating a vibrant and entertaining ambiance adds a unique touch to the overall experience, ensuring that every moment at Morning Karaoke is filled with energy and excitement.
-.</p>
+                <p>Gorm Tungland is a Co-Founder at Morning Karaoke, serving as the Boss of Stage Performance and Atmosphere. With a keen eye for creating memorable experiences, Gorm is dedicated to curating exceptional stage performances and fostering an engaging atmosphere for Morning Karaoke events. His passion for creating a vibrant and entertaining ambiance adds a unique touch to the overall experience, ensuring that every moment at Morning Karaoke is filled with energy and excitement.</p>
             </div>
 
+            <!-- Founder 3 -->
             <div class="founder">
-                <img src="founder1.jpeg" alt="Founder 3">
+                <img src="founder3.jpeg" alt="Founder 3">
                 <h2>Gard Ringen Høibjerg</h2>
                 <p>Co-Founder and Boss of Performance Arts and Drama</p>
-                <p>Gard Ringen Høibjerg is a Co-Founder at Morning Karaoke, holding the role of Boss of Performance Arts and Drama. With a deep passion for the arts and drama, Gard brings a creative and artistic flair to the Morning Karaoke experience. His dedication to performance excellence and the integration of drama ensures that each event is a captivating and immersive experience. Gard's innovative approach to blending performance arts and karaoke adds a unique and exciting dimension to the Morning Karaoke journey.
-</p>
+                <p>Gard Ringen Høibjerg is a Co-Founder at Morning Karaoke, holding the role of Boss of Performance Arts and Drama. With a deep passion for the arts and drama, Gard brings a creative and artistic flair to the Morning Karaoke experience. His dedication to performance excellence and the integration of drama ensures that each event is a captivating and immersive experience. Gard's innovative approach to blending performance arts and karaoke adds a unique and exciting dimension to the Morning Karaoke journey.</p>
             </div>
         </div>
 
- <!-- FAQ Section -->
+        <!-- FAQ Section -->
         <div class="faq-section">
             <div class="question" onclick="toggleAnswer('faq1')">What is Morning Karaoke all about?</div>
             <div class="answer" id="faq1">Morning Karaoke is a unique experience that...</div>
@@ -68,4 +76,3 @@
     </footer>
 </body>
 </html>
-
