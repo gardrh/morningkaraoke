@@ -109,30 +109,10 @@ footer {
     font-size: 1.2em;
 }
 
-nav ul {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    background-color: #1a1e26;
-    position: absolute;
-    top: 60px;
-    left: 0;
-    width: 100%;
-    z-index: 1;
-    display: none;
-}
-
-nav ul.show {
-    display: flex;
-}
-
-nav li {
-    margin: 10px 0;
-}
-
+/* Mobile styles */
 @media only screen and (max-width: 768px) {
-    header {
-        position: relative;
+    header img {
+        max-width: 70%;
     }
 
     .menu-icon {
@@ -145,16 +125,24 @@ nav li {
 
     nav ul {
         flex-direction: column;
+        background-color: #1a1e26;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        z-index: 1;
+        display: none;
     }
 
     nav ul.show {
-        position: absolute;
+        display: flex;
     }
 
     nav li {
         margin: 10px 0;
     }
 }
+
 
 /* Founders Section */
 .founders-section {
