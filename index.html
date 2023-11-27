@@ -4,16 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Papyrus&display=swap" rel="stylesheet">
-     <script src="script.js" defer></script>
-     <link rel="icon" href="faviconmk.png" type="image/png">
+    <script src="script.js" defer></script>
+    <link rel="icon" href="faviconmk.png" type="image/png">
     <title>Morning Karaoke</title>
-
 </head>
 <body>
     <header>
         <img src="MK logo just text.svg" alt="Morning Karaoke Logo">
         <div class="menu-icon" onclick="toggleMenu()">
+            <div class="hamburger"></div>
+            <div class="hamburger"></div>
             <div class="hamburger"></div>
             <div class="menu-text">Menu</div>
         </div>
@@ -34,12 +34,5 @@
     <footer>
         <p>&copy; 2023 Morning Karaoke. All rights reserved.</p>
     </footer>
-
-    <script>
-        function toggleMenu() {
-            var nav = document.querySelector('nav ul');
-            nav.classList.toggle('show');
-        }
-    </script>
 </body>
 </html>
