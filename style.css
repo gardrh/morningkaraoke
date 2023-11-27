@@ -8,6 +8,8 @@ body {
     background-color: #FFD700;
     color: #333;
     font-size: 18px;
+    margin-bottom: 60px; /* Adjust the value based on the height of your footer */
+
 }
 
 header {
