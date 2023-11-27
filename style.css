@@ -16,21 +16,21 @@ header {
 }
 
 .menu-icon {
-    display: none;
     cursor: pointer;
     font-size: 1.5em;
     color: #fff;
-    position: absolute;
+    position: fixed;
     top: 1em;
     right: 1em;
+    z-index: 1000;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 .hamburger {
-    width: 40px;
-    height: 4px;
+    width: 30px;
+    height: 3px;
     background-color: #fff;
     margin: 6px 0;
 }
@@ -42,6 +42,7 @@ header {
 }
 
 nav {
+    display: none;
     margin-top: 1em;
 }
 
@@ -136,25 +137,26 @@ nav li {
     }
 
     .menu-icon {
-        display: block;
-    }
-
-    nav {
-        display: none;
+        display: flex;
     }
 
     nav ul {
         flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
     }
 
     nav ul.show {
-        position: absolute;
+        display: flex;
     }
 
     nav li {
         margin: 10px 0;
     }
-      /* Adjustments for smaller header image on mobile */
+
+    /* Adjustments for smaller header image on mobile */
     img {
         max-width: 70%;
     }
