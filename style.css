@@ -3,15 +3,26 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #FFD700; /* Yellow background */
-    color: #333; /* Dark text for better contrast */
-    font-size: 18px; /* Base font size */
+    background-color: #FFD700;
+    color: #333;
+    font-size: 18px;
 }
 
 header {
-    background-color: #1a1e26; /* Darker header background */
+    background-color: #1a1e26;
     padding: 1em;
     text-align: center;
+    position: relative;
+}
+
+.menu-icon {
+    display: none;
+    cursor: pointer;
+    font-size: 1.5em;
+    color: #fff;
+    position: absolute;
+    top: 1em;
+    right: 1em;
 }
 
 nav {
@@ -31,45 +42,45 @@ li {
 
 a {
     text-decoration: none;
-    color: #fff; /* White link text */
-    transition: color 0.3s ease; /* Smooth color transition on hover */
-    font-size: 1.2em; /* Larger font size for links */
+    color: #fff;
+    transition: color 0.3s ease;
+    font-size: 1.2em;
 }
 
 a:hover {
-    color: #333; /* Dark text on hover for better visibility */
+    color: #333;
 }
 
 img {
     max-width: 100%;
     height: auto;
-    display: block; /* Center the image */
+    display: block;
     margin: 0 auto;
 }
 
 .content {
     text-align: center;
     padding: 2em;
-    max-width: 800px; /* Set a maximum width for content */
-    margin: 0 auto; /* Center the content horizontally */
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 h1, h2, h3 {
     font-family: 'Papyrus', sans-serif;
-    color: #1a1e26; /* Darker title text for contrast */
+    color: #1a1e26;
 }
 
 h1 {
-    font-size: 2.5em; /* Larger font size for h1 */
+    font-size: 2.5em;
 }
 
 h2 {
-    font-size: 2em; /* Larger font size for h2 */
-}
-h3 {
-    font-size: 1.7em; /* Larger font size for h3 */
+    font-size: 2em;
 }
 
+h3 {
+    font-size: 1.7em;
+}
 
 footer {
     background-color: #1a1e26;
@@ -79,51 +90,52 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
-    font-size: 1.2em; /* Larger font size for footer text */
+    font-size: 1.2em;
 }
 
+nav ul {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: #1a1e26;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    display: none;
+}
 
-        /* Additional styles for the FAQ section */
-        .faq-section {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-        }
+nav ul.show {
+    display: flex;
+}
 
-        .question {
-            cursor: pointer;
-            padding: 10px;
-            margin: 5px 0;
-            background-color: #1a1e26;
-            color: #fff;
-            border: none;
-            text-align: left;
-            width: 100%;
-        }
+nav li {
+    margin: 10px 0;
+}
 
-        .answer {
-            display: none;
-            padding: 10px;
-            background-color: #333;
-            color: #fff;
-        }
+@media only screen and (max-width: 768px) {
+    header {
+        position: relative;
+    }
 
-        /* Additional styles for the FAQ section and other styles as needed */
-        .founders-section {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-        }
+    .menu-icon {
+        display: block;
+    }
 
-        .founder {
-            text-align: center;
-            margin-bottom: 30px;
-        }
+    nav {
+        display: none;
+    }
 
-       .founder img {
-            max-width: 50%; /* Set the image size to 50% of its original size */
-            height: auto;
-            border-radius: 50%;
-            margin-bottom: 10px;
-        }
-     
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul.show {
+        position: absolute;
+    }
+
+    nav li {
+        margin: 10px 0;
+    }
+}
