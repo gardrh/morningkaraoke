@@ -154,6 +154,10 @@ nav li {
     nav li {
         margin: 10px 0;
     }
+      /* Adjustments for smaller header image on mobile */
+    img {
+        max-width: 70%;
+    }
 }
 
 /* Founders Section */
