@@ -23,11 +23,14 @@ header {
     position: absolute;
     top: 1em;
     right: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .hamburger {
-    width: 30px;
-    height: 3px;
+    width: 40px;
+    height: 4px;
     background-color: #fff;
     margin: 6px 0;
 }
@@ -40,7 +43,6 @@ header {
 
 nav {
     margin-top: 1em;
-    display: none; /* Hide navigation for desktop */
 }
 
 ul {
@@ -79,10 +81,82 @@ img {
     margin: 0 auto;
 }
 
+h1, h2, h3 {
+    font-family: 'Papyrus', sans-serif;
+    color: #1a1e26;
+}
+
+h1 {
+    font-size: 2.5em;
+}
+
 h2 {
     font-size: 2em;
 }
 
+h3 {
+    font-size: 1.7em;
+}
+
+footer {
+    background-color: #1a1e26;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: 1.2em;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: #1a1e26;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    display: none;
+}
+
+nav ul.show {
+    display: flex;
+}
+
+nav li {
+    margin: 10px 0;
+}
+
+@media only screen and (max-width: 768px) {
+    header {
+        position: relative;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    nav {
+        display: none;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul.show {
+        position: absolute;
+    }
+
+    nav li {
+        margin: 10px 0;
+    }
+}
+
+/* Founders Section */
 .founders-section {
     max-width: 800px;
     margin: 0 auto;
@@ -99,56 +173,4 @@ h2 {
     height: auto;
     border-radius: 50%;
     margin-bottom: 10px;
-}
-
-footer {
-    background-color: #1a1e26;
-    color: #fff;
-    text-align: center;
-    padding: 1em;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    font-size: 1.2em;
-}
-
-/* Mobile styles */
-@media only screen and (max-width: 768px) {
-    header {
-        position: relative;
-    }
-
-    .menu-icon {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    nav {
-        display: none;
-    }
-
-    nav ul {
-        flex-direction: column;
-        background-color: #1a1e26;
-        position: absolute;
-        top: 60px;
-        left: 0;
-        width: 100%;
-        z-index: 1;
-        display: none;
-    }
-
-    nav ul.show {
-        display: flex;
-    }
-
-    nav li {
-        margin: 10px 0;
-    }
-
-    /* Adjustments for smaller header image on mobile */
-    img {
-        max-width: 70%;
-    }
 }
