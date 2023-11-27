@@ -21,7 +21,7 @@ header {
     cursor: pointer;
     font-size: 1.5em;
     color: #fff;
-    position: fixed;
+    position: absolute;
     top: 1em;
     right: 1em;
     z-index: 1000;
