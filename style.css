@@ -156,6 +156,11 @@ footer {
     img {
         max-width: 65%;
     }
+       .button {
+        padding: 12px 20px;
+        font-size: 1em;
+    }
+}
 }
 
 /* Founders Section */
@@ -177,9 +182,7 @@ footer {
     margin-bottom: 10px;
 }
 
-/* style.css */
 
-/* Existing styles */
 
 .faq-section {
   margin-top: 30px;
